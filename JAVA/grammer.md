@@ -23,7 +23,7 @@ class MyInfo {
 ```
 Condition/Iteration
 -------------------
-###condition
+### condition
 ```java
 class NumDivision {
     public static void main(String[] args) {
@@ -54,7 +54,7 @@ class NumDivision {
 삼항 연산자는 조건에 따라 값을 다르게 주려고 할 경우
 ex) int a = (c == korea) ? (age + 1) : age;
 
-###Iteration
+### Iteration
 ```java
 class Iteration {
 
@@ -72,7 +72,7 @@ class Iteration {
 }
 ```
 
-###Game369
+### Game369
 ```java
 
 class Game369 {
@@ -116,7 +116,7 @@ class Game369 {
 }
 ```
 
-###switch 이용
+### switch 이용
 ```java
 class Game369 {
 
@@ -197,7 +197,7 @@ class HelloWorld {
 }
 ```
 
-###Class Product
+### Class Product
 ```java
 class HelloWorld {
     public static void main(String[] args) {
@@ -248,7 +248,7 @@ class Product {
 }
 ```
 
-###enum 활용
+### enum 활용
 ```java
 enum Models {BMW, KIA, CHEVROLET} //switch와 함께 주로
 
