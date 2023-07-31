@@ -27,3 +27,22 @@ for if 문 중괄호 생략 가능 (생략안하는게 실수 적어짐)
 
 if 대신 when 많이 씀
 // kotlin range : step / in 1..3 / in 1 until 4 / in 3 downTo 1  
+
+- - -
+collection 사용 이유
+
+1. 배열을 선언하면 배열의 크기를 초기에 설정하고 이후에 변경이 불가능하다.
+2. 데이터를 검색하는 과정에서 시간이 많이 걸린다.
+3. 같은 기본형 데이터 타입의 자료형만 저장할 수 있다.
+
+enum class
+enum 객체, java enum에서 class로 확장되면서 상수 -> 속성, 메소드 값 까지 추가할 수 있게 확장된 개념.
+
+null safety / enum 은 필요한 경우에 앞으로
+
+보조생성자 쓸 일 거의 없음. 서버 단에서 계산이 대부분 됨으로 클라이언트 단까지 오지 않음
+
+ordinal 쓸 일 적음
+
+ktor 서버 개발 가능(java는 spring MVC)
+
