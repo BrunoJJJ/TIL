@@ -1,0 +1,205 @@
+<!--MBTI-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/mbti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M.B.T.I"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I.N.T.J"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="22.5"
+        app:layout_constraintCircleRadius="140dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I.N.T.P"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="45"
+        app:layout_constraintCircleRadius="140dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E.N.T.J"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="67.5"
+        app:layout_constraintCircleRadius="140dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E.N.T.P"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="140dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I.N.F.J"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="110.5"
+        app:layout_constraintCircleRadius="140dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I.N.F.P"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="133"
+        app:layout_constraintCircleRadius="140dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E.N.F.J"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="155.5"
+        app:layout_constraintCircleRadius="140dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E.N.F.P"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="178"
+        app:layout_constraintCircleRadius="140dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I.S.T.J"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="200.5"
+        app:layout_constraintCircleRadius="140dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I.S.F.J"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="223"
+        app:layout_constraintCircleRadius="140dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E.S.T.J"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="245.5"
+        app:layout_constraintCircleRadius="140dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E.S.F.J"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="268"
+        app:layout_constraintCircleRadius="140dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I.S.T.P"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="290.5"
+        app:layout_constraintCircleRadius="140dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I.S.F.P"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="313"
+        app:layout_constraintCircleRadius="140dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E.S.T.P"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="335.5"
+        app:layout_constraintCircleRadius="140dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E.S.F.P"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintCircle="@id/mbti"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="140dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--constraintCircle, constraintAngle, constraintCircleRadius를 이용하여 시계 모양 구현-->
