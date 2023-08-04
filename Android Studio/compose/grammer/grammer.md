@@ -76,5 +76,50 @@ D : Scrolling(Column, Row)
 
 - - -
 
+gradle scripts -> manifests -> android
 
+안드로이드 화면 전환 방법 많음(자주쓰는 4가지)
+
+activity 화면 전환
+
+activity 위에 fragment 구성해 fragment로 전환 (화면 tab 느낌)
+
+androidx nevigation (위 발전)
+
+navigation compose 활용 - https://developer.android.com/codelabs/basic-android-kotlin-compose-navigation?hl=ko#0
+
+qr앱은 웹뷰를 띄운 것.
+
+keyword
+
+intent startactivity
+
+코드작성시 컴파일 버그(디버깅)
+
+이외에 logcat
+
+
+activity 개념
+
+https://developer.android.com/guide/components/activities/intro-activitieshttps://7942yongdae.tistory.com/176
+
+activity Lifecycle
+
+하기 전 콜백 메소드 https://onlyfor-me-blog.tistory.com/47
+
+// 아래 2개는 activity 간 데이터 주고받을 때 사용하는 개념 keyword
+
+intent extra data
+
+https://8iggy.tistory.com/256
+
+activity Result
+
+apply, with, let, also, run
+
+[https://medium.com/@limgyumin/코틀린-의-apply-with-let-also-run-은-언제-사용하는가-4a517292df29](https://medium.com/@limgyumin/%EC%BD%94%ED%8B%80%EB%A6%B0-%EC%9D%98-apply-with-let-also-run-%EC%9D%80-%EC%96%B8%EC%A0%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80-4a517292df29)
+
+http://batmask.net/index.php/2021/12/10/286/
+
+1) 객체를 ‘it’으로 쓰느냐, ‘this’를 쓰느냐, 2) 리턴값이 lambda result이냐, context object이냐에 따라 나뉜다. 4개면 되는데? extension function 형식외에 argument로 context object를 받는 ‘with’가 추가로 하나 존재한다.
 
