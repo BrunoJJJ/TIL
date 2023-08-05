@@ -123,3 +123,30 @@ http://batmask.net/index.php/2021/12/10/286/
 
 1) 객체를 ‘it’으로 쓰느냐, ‘this’를 쓰느냐, 2) 리턴값이 lambda result이냐, context object이냐에 따라 나뉜다. 4개면 되는데? extension function 형식외에 argument로 context object를 받는 ‘with’가 추가로 하나 존재한다.
 
+- - - 
+
+list는 sorted, reversed() 함수 사용. mutableList는 .sort(), reverse() 바로 적용 sorted()도 가능
+
+sorted 함수(+ by with 등)
+https://notepad96.tistory.com/19
+
+Button, https://smashandroid.tistory.com/89
+
+padding / offset, https://kotlinworld.com/194
+
+compose keyword
+
+Icon
+
+DropDownMenu
+
+1. Container
+
+2. Navigation icon (optional)
+ 
+4. Title (optional) --- 세개
+ 
+
+5. Action items (optional)
+
+6. Overflow menu (optional) ...세개
