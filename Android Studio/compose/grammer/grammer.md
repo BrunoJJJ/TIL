@@ -1,4 +1,4 @@
-readme.md로 정리 예정
+강의 들으며 적어둔 내용
 
 - - - 
 안드로이드 권장 dp는 8의 배수 / 작으면 4의 배수
@@ -150,3 +150,54 @@ DropDownMenu
 5. Action items (optional)
 
 6. Overflow menu (optional) ...세개
+
+
+- - - 
+
+data storage
+
+앱별 저장소
+
+공유 저장소
+
+환경설정 preference
+
+-비공개 데이터를 키 - 값 형태로 저장(ex) 로그인, 설정화면 등)
+
+데이터베이스
+
+Room 라이브러리를 활용하여 구조화된 데이터를 비공개 형태로 저장
+
+(7년 전 나옴, java 그전엔 SQLite쓰다가 안정성을 위해 안드로이드는 room 권장)
+
+공유저장소 제외하고 앱에서만 접근
+
+앱 삭제하면 다 날라감(공유저장소가?)
+
+prefrence
+
+SharedPreference VS DataStore
+
+SharedPreference
+
+key - value형태 저장소 소규모 단순 데이터 관리용
+
+고전적 사용, 간편
+
+DataStore(3년됨)
+
+Kotlin 코루틴, Flow를 사용해 비동기 방식으로 데이터 저장
+
+SharedPreference 단점들을 개선해 현재 새로 추가되어 권장되는 방법
+
+deprecated 된 코드는 쓰지말자 취소선 그어진 것
+
+getSharedPreferences 대신
+
+getPreferences로 할 예정(환경설정 파일이 하나만 필요해서)
+
+apply()는 비동기적, commit은 동기적 - ui렌더링 시 일시정지될 수 있음 주의(기본 스레드에서 호출하는 것을 피해야 함)
+
+val activity = LocalContext.current as? Activity // as는 형변환 activity context 상속 관계라 문제없음
+
+val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE) // nullable하지 않지만 as뒤에 ? 붙여 null check 윗줄에 activity로 형변환시 실패하면 null 값 될 수 있음
