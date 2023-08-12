@@ -27,6 +27,7 @@ int main()
 첫번째 print값 : 1(10진법) = 0001(2진법)
 ```
 
+- - -
 
 ### yield, generator
 
@@ -39,3 +40,18 @@ return은 한 번에 메모리에 모든 결과 값을 올리는 반면, yield�
 즉, 대용량 파일 읽기, 스트림 데이터, 무한 데이터 생산 가능
 
 https://www.daleseo.com/python-yield/
+
+- - -
+
+python 숏 코드
+'''python
+a,b,c,d,e = map(int,open(0))
+print(min(a,b,c)+min(d,e)-50)
+'''
+open(0) 의미?
+
+https://it-neicebee.tistory.com/118
+
+https://stackoverflow.com/questions/53898231/integer-file-descriptor-0-in-open
+
+
