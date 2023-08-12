@@ -1,0 +1,6 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id("com.android.application") version "8.0.2" apply false   // 8.1.0 -> 8.0.2
+    id("org.jetbrains.kotlin.android") version "1.8.0" apply false // 바뀐 값임
+    id("com.google.devtools.ksp") version "1.8.0-1.0.8" apply false // 추가 부분 + 버전 다운한 상태
+}
