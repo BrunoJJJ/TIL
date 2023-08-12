@@ -201,3 +201,97 @@ apply()는 비동기적, commit은 동기적 - ui렌더링 시 일시정지될 �
 val activity = LocalContext.current as? Activity // as는 형변환 activity context 상속 관계라 문제없음
 
 val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE) // nullable하지 않지만 as뒤에 ? 붙여 null check 윗줄에 activity로 형변환시 실패하면 null 값 될 수 있음
+
+- - -
+
+android room
+
+https://developer.android.com/training/data-storage/room?hl=ko
+
+dependencies
+
+괄호 없는 경우 groovy - gradle에 쓰는 groovy
+
+괄호 있는 경우 kotlin - gradle에 쓰는 것도 kotlin으로 바뀌어 가는중
+
+상단 sync now
+
+kapt / ksp 둘 다 최신 기술, ksp만 씀
+
+https://developer.android.com/studio/build/migrate-to-ksp?hl=ko
+
+버전 x.x.x
+
+major.minor.patch
+
+사소한거 수정 patch up, 기능 추가 minor up, 큰 변화 major up
+
+release note
+
+
+데이터 뽑아올 때 query문 학습하기
+
+데이터베이스를 class 정의
+
+클래스에는 데이터베이스와 연결된 데이터 항목을 모두 나열하는 entities 배열이 포함된 @Database 주석이 달려야 합니다.
+
+클래스는 RoomDatabase를 확장하는 추상 클래스여야 합니다.
+
+(추상 클래스인데 roomdatabase를 상속받는다는 소리)
+
+데이터베이스와 연결된 각 DAO 클래스에서 데이터베이스 클래스는 인수(파라미터 의미)가 0개이고 DAO 클래스의 인스턴스를 반환하는 추상 메서드를 정의해야 합니다.
+
+@Database를 위해 ksp 라이브러리를 넣은 이유
+
+데이터베이스 사용 (main activity 에서)
+```
+val context = LocalContext.current
+val db = remember {
+Room.databaseBuilder(
+context,
+AppDatabase::class.java, "contacts.db"
+).build()
+}
+```
+
+onclick 부분
+```
+val newUser = User(
+uid = 0,
+name = userName // 본인의 value 값.. var userName by remember {mutableStateOf ("")} 부분
+)
+db.userDao().insertAll(newUser) 추가
+```
+
+compose는 화면 바뀔 때마다 계속 check해야되서 remember이면 값이 변경 안되면 체크 안해서 성능 up
+
+Cannot access database on the main thread
+
+즉, 비동기 기능 추가해야 함
+
+화면 바뀌는건 main 스레드
+
+화면 값? io 스레드
+
+돌아서 그걸 구분해주는 코루틴
+
+val scope = rememberCoroutineScope() 추가해주고
+
+onclick안에 inserALL을 scope로 감싸주기
+```
+scope.launch([Dispatchers.IO](http://dispatchers.io/)) {
+db.userDao().insertAll(newUser)
+}
+```
+
+database 값 보는 법
+
+직접 불러오거나, 간편한 방법 == view -> Tool Windows -> App Inspection
+
+값을 가져오는건 getALL 함수 참고
+
+객체 간 관계 정의 부분은 데이터베이스 relation 부분
+
+마이그레이션 - 데이터베이스 이전
+
+아이디와 이름만 받겠다고 해놓은 데이터베이스를 이메일 등 다른 정보를 받는다고 할 때, 이미 있던 정보를 어떻게 할지 -> 마이그레이션 한다.
