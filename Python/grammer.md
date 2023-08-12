@@ -43,12 +43,12 @@ https://www.daleseo.com/python-yield/
 
 - - -
 
-python 숏 코드
-'''python
+open(0) 의미?
+
+```python
 a,b,c,d,e = map(int,open(0))
 print(min(a,b,c)+min(d,e)-50)
-'''
-open(0) 의미?
+```
 
 https://it-neicebee.tistory.com/118
 
